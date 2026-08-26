@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link href="assets/img/favicon.ico" type="image/x-icon" rel="icon">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<!-- ===== HEADER ====== -->
+
+<body>
+  <header>
+    <nav>
+      <div class="portfolio">
+        <a class="inicio" href="index.html">
+          <h2>My Portfolio</h2>
+        </a>
+      </div>
+      <div class="hamburguesa">
+        <span class="hamburguesa-bar"></span>
+        <span class="hamburguesa-bar"></span>
+        <span class="hamburguesa-bar"></span>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a class="nav-links" href="#saludo">Inicio</a></li>
+        <li class="nav-item"><a class="nav-links" href="#acerca-mi">Acerca de mí</a></li>
+        <li class="nav-item"><a class="nav-links" href="#habilidades">Habilidades</a></li>
+        <li class="nav-item"><a class="nav-links" href="#proyectos">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-links" href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ====== -->
+  <main>
+    <div id="saludo">
+      <h1>¡Hola! Soy Adrián Cardona</h1>
+    </div>
+    <div class="estudiante">
+      <p class="quien-es">Soy un estudiante de Jóvenes creaTIvos 2026.</p>
+    </div>
+    <div class="contactame">
+      <a href="https://wa.me/573235176563" target="_blank">¡Contáctame!</a>
+    </div>
+  </main>
+
+  <!-- ===== ACERCA DE MÍ ===== -->
+  <section id="acerca-mi">
+    <h2 id="acerca-mi-title">Acerca de mí</h2>
+    <span class="linea"></span>
+  </section>
+
+  <!-- ===== ACERCA DE MÍ IMAGEN ===== -->
+  <div class="acerca-mi-imagen">
+    <img id="imagen-adrian" src="assets/img/adrian.png" alt="Imagen de Adrián Cardona">
+    <div class="acerca-mi-texto">
+      <p>Soy un desarrollador frontend en proceso de aprendizaje con pasión y gran entusiasmo por la tecnología, soy
+        capaz de crear sitios web interactivos, atractivos y responsivos. Me especializo por el momento en HTML, CSS Y
+        JavaScript, y siempre estoy a la búsqueda de incrementar mis conocimientos y ampliar mis experiencias por medio
+        de proyectos, retos y colaboraciones de todo tipo.
+        Mi objetivo es crear sitios web que no solamente se vean bien, sino que también brinden una experiencia
+        inmersiva, divertida y atractiva para los usuarios, y de esa manera también generar valor para mis clientes.
+        Creo en el código limpio, en la pulcritud de la semántica y en la creatividad para crear soluciones únicas y
+        eficientes.
+        Cuando no estoy programando, me gusta estar aprendiendo más sobre mi lenguaje de programación, dedicar tiempo al
+        deporte y a la vida en general.
+        Me gusta estar en contacto con personas, compartir ideas y aprender de ellos.</p>
+    </div>
+  </div>
+
+  <!-- ===== MIS HABILIDADES ===== -->
+  <section id="habilidades">
+    <h2 id="habilidades-title">Habilidades</h2>
+    <span class="linea-habilidades"></span>
+  </section>
+
+  <!-- ===== TARJETAS ===== -->
+  <div class="container">
+    <div class="skill">
+      <div class="info">
+        <h3 class="tarjeta-title">HTML</h3>
+        <span class="progress-text">95%</span>
+        <div class="bar">
+          <div class="progress" style="--width:95%"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <h3 class="tarjeta-title">CSS</h3>
+        <span class="progress-text">80%</span>
+        <div class="bar">
+          <div class="progress" style="--width:80%"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <h3 class="tarjeta-title">JavaScript</h3>
+        <span class="progress-text">50%</span>
+        <div class="bar">
+          <div class="progress" style="--width:50%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PROYECTOS ===== -->
+  <section id="proyectos">
+    <h2 id="proyectos-title">Proyectos</h2>
+    <span class="linea-proyectos"></span>
+  </section>
+
+  <!-- ===== PROYECTOS TARJETAS ===== -->
+  <div id="cards">
+    <div class="card">
+      <div class="infocard">
+        <h3 class="tarjeta-title">SporTech</h3>
+        <p class="tarjeta-text">Este proyecto es una página web interactiva que estoy desarrollando actualmente para
+          Jóvenes creaTIvos donde aprendo mayor parte de lo que hago.</p>
+        <button class="btn-conocer-mas" data-project="sportech">Conocer Más</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="infocard">
+        <h3 class="tarjeta-title">My Portfolio</h3>
+        <p class="tarjeta-text">Este proyecto es una página web interactiva que muestra información acerca de mí, mis
+          habilidades y lo que aprendo poco a poco. ¡Es la web en donde estás actualmente!</p>
+        <button class="btn-conocer-mas" data-project="portfolio">Conocer Más</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="infocard">
+        <h3 class="tarjeta-title">Más proyectos vendrán pronto!</h3>
+        <p class="tarjeta-text">Esto apenas comienza y este camino será bastante extenso y repleto de nuevos retos y
+          aprendizajes. Estoy a la búsqueda de proyectos para desarrollar, ¡Mantente actualizado!</p>
+        <button class="btn-conocer-mas" data-project="proximo">Conocer Más</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODAL PROYECTO ===== -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Cerrar">&times;</button>
+      <img class="modal-img hidden" id="modal-img" src="" alt="">
+      <h3 class="modal-title" id="modal-title"></h3>
+      <p class="modal-text" id="modal-text"></p>
+    </div>
+  </div>
+
+  <!--CONTACTO-->
+  <section id="contacto">
+    <h2 id="contacto-title">Contacto</h2>
+    <span class="linea-contacto"></span>
+
+    <div class="contenido-contacto">
+
+    <!--METODOS DE CONTACTO-->
+    <div class="metodos-contacto">
+      <article id="correo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="mail">
+          <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+          <rect x="2" y="4" width="20" height="16" rx="2" />
+        </svg>
+        <div class="info-metodo">
+          <span>Correo</span>
+          <small>adrian033109.aa@gmail.com</small>
+        </div>
+      </article>
+
+      <article id="telefono">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="icono-telefono">
+          <path
+            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+        </svg>
+        <div class="info-metodo">
+          <span>Teléfono</span>
+          <small>+57 323 5176563</small>
+        </div>
+      </article>
+
+      <article id="ubicacion">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="map">
+          <path
+            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+          <circle cx="12" cy="10" r="3" />
+        </svg>
+        <div class="info-metodo">
+          <a href="https://maps.app.goo.gl/t15gsEpeWvfNJNeu8" target="_blank" rel="noopener noreferrer">Ubicación</a>
+          <small>Cali, Colombia</small>
+        </div>
+      </article>
+
+      <article id="horario">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="reloj">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 6v6l4 2" />
+        </svg>
+        <div class="info-metodo">
+          <span>Horario</span>
+          <small>Lunes a Viernes</small>
+          <small>8:00 a.m - 8:00 p.m</small>
+        </div>
+      </article>
+    </div>
+
+    <!--FORMULARIO DE CONTACTO-->
+    <form action="https://formspree.io/f/xkjwdpko" id="contactForm" method="POST">
+      <div class="fila-form">
+        <div class="campo-form">
+          <label for="name" class="sr-only">Nombre completo</label>
+          <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+        </div>
+        <div class="campo-form">
+          <label for="email" class="sr-only">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+        </div>
+      </div>
+
+      <div class="campo-form">
+        <label for="phone" class="sr-only">Teléfono</label>
+        <input type="tel" id="phone" name="phone" placeholder="Teléfono (opcional)" inputmode="numeric"
+          pattern="[0-9]{10}" maxlength="10" title="Ingresa un número de 10 dígitos"
+          oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+      </div>
+
+      <div class="campo-form">
+        <label for="message" class="sr-only">Mensaje</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tu mensaje..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-enviar">Enviar mensaje</button>
+      <p id="formMessage" style="display:none;"></p>
+    </form>
+
+    <!--MAPA-->
+    <div class="mapa-contacto">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d248.91882621908283!2d-76.4787836!3d3.422766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a7401af13dd5%3A0x5a9987bc7ee13360!2sDg.%2026p%209%20%239604%2C%20Marroquin%20II%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1sen!2sco!4v1786085091584!5m2!1sen!2sco"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </div>
+  <script src="assets/js/form.js" defer></script>
+  </section>
+
+<!--FOOTER-->
+<footer>
+  <div class="footer-marca">
+    <h2 class="logo-footer">MyPortfolio</h2>
+    <small class="tagline-footer">Adrián Cardona</small>
+    <div class="redes">
+      <a href="https://www.instagram.com/a.adri_an/" target="_blank" rel="noopener noreferrer"
+        class="icono-red icono-instagram" aria-label="Instagram"></a>
+      <a href="https://www.facebook.com/adrian.033109/" target="_blank" rel="noopener noreferrer"
+        class="icono-red icono-facebook" aria-label="Facebook"></a>
+      <a href="https://www.tiktok.com/@a.adri_an?_r=1&t=ZS-98g3Mil2ZLF" target="_blank" rel="noopener noreferrer"
+        class="icono-red icono-tiktok" aria-label="TikTok"></a>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <nav class="footer-item">
+      <h3>NAVEGACIÓN</h3>
+      <ul>
+        <li><a href="#saludo">Inicio</a></li>
+        <li><a href="#acerca-mi">Acerca de mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-item">
+      <h3>PROYECTOS</h3>
+      <ul>
+        <li><a href="#proyectos">SporTech</a></li>
+        <li><a href="#proyectos">MyPortfolio</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <p class="copyright-footer">&copy; 2026 MyPortfolio - Todos los derechos reservados.</p>
+</footer>
+</body>
+
+</html>
